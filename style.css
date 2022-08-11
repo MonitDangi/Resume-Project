@@ -7,8 +7,8 @@ body{
 
 /* Body header */
 #body-header{
-    margin-top:-20px;
-    height:65vh;
+    margin-top:-1rem;
+    height:60vh;
     /* opacity: .95; */
     background-image: url(/images/img_lights.jpg);
     background-size: cover;
@@ -48,16 +48,16 @@ body{
 }
 
 #body-header .name {
-    margin-top: 64px;
+    margin-top: 2rem;
     font-size: 3rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
 }
 .social-media{
-    margin-top:-50px;
+    margin-top:-1rem;
 }
 .social-media li a i{
-    padding:10px;
+    padding:1rem;
     font-size:2rem;
     border-radius:50%;
 }
@@ -67,7 +67,7 @@ body{
 #about{
     height:auto;
     width:100%;
-    background-color: whitesmoke;
+    background-color: white;
 }
 .my-img{
     height:14rem;
@@ -84,40 +84,47 @@ body{
 }
 .about-me{
     height:auto;
-    width:50vw;
+    width:60%;
     margin:auto;
 }
 #about .about-me p{
+    color:rgb(69, 85, 99);
     font-size: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #skills{
-    margin-top:-1.5rem;
+    margin-top:1rem;
     height:auto;
     width:100%;
     background-color: whitesmoke;
+    display: inline-block;
+    margin-bottom: 2rem;
 }
-#skills .ds {
+#skills .header{
     display: flex;
+    border-radius: 4rem;
+    width:20rem;
+    margin:auto;
 }
-#skills .ds .logo{
-    margin: 20px 20px 0px 80px;
-    font-size: 2rem;
-}
-#skills .ds .about-skill{
-    font-size: 1.4rem;
-}
-#skills .dsa{
-    display:flex;
-}
-#skills .dsa .logo{
-    margin: 22px 20px 0px 80px;
-}
-#skills .dsa .about-skill{
-    font-size: 1.4rem;
-}
+ #skills .header:hover{
 
-
-
-
-
+    box-shadow: 1px 1px 5px 5px rgb(102, 101, 101);
+} 
+#skills .header .logo{
+    font-size:3rem;
+    margin:1rem;
+}
+#skills .header .logo i{
+    color:rgb(43, 43, 74);
+    padding:1rem;
+    border-radius: 2rem;
+}
+#skills .header .name{
+    font-size:3rem;
+    margin:1.5rem;
+}
+#skills .header .name a{
+    color:rgb(43, 43, 74);
+    padding:1rem;
+    border-radius: 2rem;
+} 
