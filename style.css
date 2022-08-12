@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-top:-1rem;
     height:auto;
     /* opacity: .95; */
@@ -102,7 +103,6 @@ body{
     width:100%;
     background-color: whitesmoke;
     display: inline-block;
-    margin-bottom: 2rem;
 }
 #skills .header{
     display: flex;
@@ -111,7 +111,6 @@ body{
     margin:auto;
 }
  #skills .header:hover{
-
     box-shadow: 1px 1px 5px 5px rgb(102, 101, 101);
 } 
 #skills .header .logo{
@@ -132,3 +131,115 @@ body{
     padding:1rem;
     border-radius: 2rem;
 } 
+
+#skill-display {
+    width:80%;
+    margin:auto;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-color: whitesmoke;
+}
+#skill-display .skill-progress{
+    width:15rem;
+    margin-top:2rem;
+    height:2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 4px 4px grey;
+    margin-right:3rem;
+    border:2px solid black;
+    background-color: rgb(207, 202, 202);
+}
+#skill-display .skill-progress .seventy-five-percent{
+    width:75%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress .seventy-five-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+
+
+#skill-display .skill-progress .eighty-percent{
+    width:85%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress .eighty-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+
+#skill-display .skill-progress .fifty-percent{
+    width:85%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress .fifty-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+
+#skill-display .skill-progress .seventy-six-percent{
+    width:76%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress .seventy-six-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+#skill-display .skill-progress .ninety-percent{
+    width:90%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress .ninety-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+#skill-display .skill-progress .sixty-percent{
+    width:60%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress .sixty-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
+#skill-display .skill-progress-dsa{
+    width:30rem;
+    margin-top:2rem;
+    height:2rem;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 4px 4px grey;
+    margin-right:3rem;
+    border:2px solid black;
+    background-color: rgb(245, 42, 42);
+}
+#skill-display .skill-progress-dsa .seventy-one-percent{
+    width:71%;
+    height:inherit;
+    background-color: rgb(245, 42, 42);
+    border-radius: 0.8rem;
+}
+#skill-display .skill-progress-dsa .seventy-one-percent .skill-name span{
+    margin-left:1rem;
+    font-size: 1.4rem;
+    font-weight:bold;
+}
