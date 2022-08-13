@@ -283,15 +283,14 @@ section:target{
 .timeline{
     height:auto;
     position: relative;
-    width:75%;
+    width:85%;
     margin:auto;
-    margin-bottom:1rem;
 }
 .timeline .timeline-box{
     position:relative;
     width:40%;
     height:auto;
-    left:5%;
+    left:0%;
     min-height: 150px;
     margin:1rem 1rem;
     display: flex;
@@ -309,6 +308,10 @@ section:target{
     margin:auto;
     font-size:2rem;
     margin-top:-0.20rem;
+    margin-right:2rem;
+    display:flex;
+    flex-wrap:wrap;
+    margin-left:-1rem;
 }
 
 .timeline .timeline-box .projects span img{
@@ -319,7 +322,7 @@ section:target{
     margin-right:-1rem;
 }
 .timeline .timeline-box h3{
-    margin-left:1rem;
+    margin-left:-1rem;
     margin-right:1rem;
 }
 .timeline .timeline-divider{
@@ -333,7 +336,28 @@ section:target{
 .timeline .timeline-divider .timeline-traveller{
     position:sticky;
     transform: rotate(90deg);
-    font-size:4rem;
+    font-size:2rem;
     top:25%;
     color:rgb(2, 2, 69);
+}
+
+
+
+.timeline .timeline-box .projects-2{
+    display:flex;
+    flex-wrap:wrap;
+}
+.timeline .timeline-box .projects-2 span{
+    margin:auto;
+    font-size:2rem;
+    margin-top:-0.20rem;
+    margin-right:2rem;
+}
+
+.timeline .timeline-box .projects-2 span img{
+    width:3rem;
+    height:3rem;
+    border-radius:2rem;
+    margin-top: -.25rem;
+    margin-right:-1rem;
 }
