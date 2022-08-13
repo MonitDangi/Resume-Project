@@ -2,8 +2,12 @@
 body{
     margin:0px;
     padding: 0px;
-    background-color:whitesmoke;
+    background-color:white;
     /* background-color:white; */
+}
+
+section:target{
+    background-color: whitesmoke;
 }
 
 /* Body header */
@@ -30,17 +34,17 @@ body{
 /* Navigation bar list  */
 .navbar li{
     display:inline-block;
-    margin:0px 12.5px 0px 12.5px;
+    margin:-25px 12.5px 0px 12.5px;
 }
 
 /* Navigation bar lists a  */
 .navbar li a{
     color:white;
     font-size: 2rem;
-    font-family: cursive;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
- 
+
 /* navigation bar li a at hover  */
 .navbar .li a:hover{
     color:rgb(195, 33, 33);
@@ -51,6 +55,7 @@ body{
 .text-center{
     text-align: center;
 }
+
 
 #body-header .name {
     margin-top: -3rem;
@@ -70,10 +75,12 @@ body{
 .social-media li a i:hover{
     box-shadow: 0px 0px 6px 2px whitesmoke;
 }
+.social-media li a i:visited{
+    box-shadow: 0px 0px 6px 2px whitesmoke;
+}
 #about{
     height:auto;
     width:100%;
-    background-color: white;
 }
 .my-img{
     height:14rem;
@@ -104,33 +111,22 @@ body{
     width:100%;
     display: inline-block;
 }
+
 #skills .header{
     display: flex;
     border-radius: 4rem;
-    width:20rem;
+    width:22rem;
     margin:auto;
 }
- #skills .header:hover{
-    box-shadow: 1px 1px 5px 5px rgb(102, 101, 101);
-} 
-#skills .header .logo{
-    font-size:3rem;
-    margin:1rem;
+#skills .header:hover{
+    box-shadow: 0px 0px 8px 8px rgb(143, 128, 128);
 }
-#skills .header .logo i{
-    color:rgb(43, 43, 74);
-    padding:1rem;
-    border-radius: 2rem;
+#skills .header span{
+    font-size: 4rem;
+    color:rgba(39, 29, 81, 0.983);
+    margin:2rem 1rem;
 }
-#skills .header .name{
-    font-size:3rem;
-    margin:1.5rem;
-}
-#skills .header .name a{
-    color:rgb(43, 43, 74);
-    padding:1rem;
-    border-radius: 2rem;
-} 
+
 
 #skill-display {
     width:80%;
@@ -154,9 +150,10 @@ body{
     background-color: rgb(207, 202, 202);
 }
 #skill-display .skill-progress .seventy-five-percent{
+    margin-left:-0.5px;
     width:75%;
     height:inherit;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(187, 5, 5);
     border-radius: 0.7rem;
     padding-top:1px;
 }
@@ -168,9 +165,10 @@ body{
 
 
 #skill-display .skill-progress .eighty-percent{
+    margin-left:-0.5px;
     width:85%;
     height:inherit;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(10, 172, 1);
     border-radius: 0.7rem;
     padding-top:1px;
 }
@@ -181,9 +179,10 @@ body{
 }
 
 #skill-display .skill-progress .fifty-percent{
-    width:85%;
+    margin-left:-0.5px;
+    width:50%;
     height:inherit;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(59, 59, 158);
     border-radius: 0.7rem;
     padding-top:1px;
 }
@@ -194,9 +193,10 @@ body{
 }
 
 #skill-display .skill-progress .seventy-six-percent{
+    margin-left:-0.5px;
     width:76%;
     height:inherit;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(187, 5, 5);
     border-radius: 0.7rem;
     padding-top:1px;
 }
@@ -206,9 +206,10 @@ body{
     font-weight:bold;
 }
 #skill-display .skill-progress .ninety-percent{
+    margin-left:-0.25px;
     width:90%;
     height:inherit;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(10, 172, 1);
     border-radius: 0.7rem;
     padding-top:1px;
 }
@@ -218,9 +219,10 @@ body{
     font-weight:bold;
 }
 #skill-display .skill-progress .sixty-percent{
+    margin-left:-0.5px;
     width:60%;
     height:inherit;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(59, 59, 158);
     border-radius: 0.7rem;
     padding-top:1px;
 }
@@ -242,11 +244,12 @@ body{
 }
 
 #skill-display .skill-progress-dsa .seventy-one-percent{
+    margin-left:-0.5px;
     display: flex;
     flex-wrap: wrap;
     width:71%;
     height:100%;
-    background-color: rgb(245, 42, 42);
+    background-color: rgb(187, 5, 5);
     border-radius: 0.7rem;
     padding-left:7px;
     padding-top:1px;
@@ -255,4 +258,67 @@ body{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
+}
+#project{
+    width: 100%;
+    height:auto;
+    background-color: rgb(244, 244, 229);
+    margin-top:-1rem;
+}
+#project .header{
+    display: flex;
+    border-radius: 4rem;
+    width:22rem;
+    margin:auto;
+    margin-top:0.5rem;
+}
+#project .header:hover{
+    box-shadow: 0px 0px 8px 8px rgb(143, 128, 128);
+}
+#project .header span{
+    font-size: 4rem;
+    color:rgba(39, 29, 81, 0.983);
+    margin:2rem 1rem;
+}
+.timeline{
+    height:auto;
+    position: relative;
+    width:75%;
+    margin:auto;
+    margin-bottom:1rem;
+}
+.timeline .timeline-box{
+    position:relative;
+    width:40%;
+    height:auto;
+    left:5%;
+    min-height: 150px;
+    margin:1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+.timeline .timeline-box:nth-child(2n){
+    left:53%;
+}
+.timeline .timeline-box .projects{
+    display:flex;
+    flex-wrap:wrap;
+}
+.timeline .timeline-box .projects span{
+    margin:auto;
+    font-size:2rem;
+    margin-top:-0.20rem;
+}
+
+.timeline .timeline-box .projects span img{
+    width:3rem;
+    height:3rem;
+    border-radius:2rem;
+    margin-top: -.25rem;
+    margin-right:-1rem;
+}
+.timeline .timeline-box h3{
+    margin-left:1rem;
+    margin-right:1rem;
 }
