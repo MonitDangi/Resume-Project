@@ -110,6 +110,7 @@ section:target{
     height:auto;
     width:100%;
     display: inline-block;
+    background-color: rgb(210, 214, 214);
 }
 
 #skills .header{
@@ -280,13 +281,14 @@ section:target{
     color:rgba(39, 29, 81, 0.983);
     margin:2rem 1rem;
 }
-.timeline{
+#project .timeline{
     height:auto;
     position: relative;
     width:85%;
     margin:auto;
+    padding-bottom:10rem;
 }
-.timeline .timeline-box{
+#project .timeline .timeline-box{
     position:relative;
     width:40%;
     height:auto;
@@ -297,14 +299,14 @@ section:target{
     flex-direction: column;
     flex-wrap:wrap;
 }
-.timeline .timeline-box:nth-child(2n){
+#project .timeline .timeline-box:nth-child(2n){
     left:53%;
 }
-.timeline .timeline-box .projects{
+#project .timeline .timeline-box .projects{
     display:flex;
     flex-wrap:wrap;
 }
-.timeline .timeline-box .projects span{
+#project .timeline .timeline-box .projects span{
     margin:auto;
     font-size:2rem;
     margin-top:-0.20rem;
@@ -313,51 +315,170 @@ section:target{
     flex-wrap:wrap;
     margin-left:-1rem;
 }
-
-.timeline .timeline-box .projects span img{
+#project .timeline .timeline-box .projects span img{
     width:3rem;
     height:3rem;
     border-radius:2rem;
     margin-top: -.25rem;
-    margin-right:-1rem;
+    margin-right:0rem;
 }
-.timeline .timeline-box h3{
-    margin-left:-1rem;
+#project .timeline .timeline-box h3{
+    margin-left:0rem;
     margin-right:1rem;
 }
-.timeline .timeline-divider{
+#project .timeline .timeline-divider{
     position:absolute;
-    height:85%;
+    height:65%;
     width:0px;
     border:3px dashed rgb(4, 4, 4);
     top:10%;
-    left:50%;
+    left:49.9%;
 }
-.timeline .timeline-divider .timeline-traveller{
+#project .timeline .timeline-divider .timeline-traveller{
     position:sticky;
     transform: rotate(90deg);
     font-size:2rem;
     top:25%;
     color:rgb(2, 2, 69);
 }
+#education{
+    background-color:rgb(222, 221, 221);
+    width:100%;
+    margin-top:-1.2rem;
+    padding-top:2rem;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    padding-bottom:5rem;
+}
+#education .header{
+    display: flex;
+    border-radius:4rem;
+    width:20rem;
+    margin-top:-0.5rem;
+    margin:auto;
+}
+#education .header:hover{
+    box-shadow: 0px 0px 8px 8px rgb(143, 128, 128);
+}
+#education .header span{
+    margin:auto;
+    font-size:3rem;
+    color:rgba(39, 29, 81, 0.983);
+    margin:0.5rem;
+}
+ #education .timeline{
+    position: relative;
+    width:80%;
+    height:auto;
+    margin:auto;
+}
+#education .timeline .timeline-box{
+    position:relative;
+    width:40%;
+    height:auto;
+    min-height: 150px;
+    margin:auto;
+    margin:1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
-
-
-.timeline .timeline-box .projects-2{
+#education .timeline .timeline-box:nth-child(2n){
+    left:50%;
+}
+#education .timeline .timeline-box .educated{
+    display: flex;
+    flex-wrap:wrap;
+    margin-left:8rem;
+    width: 80%;
+}
+#education .timeline .timeline-box .educated span{
+    /* margin:auto; */
     display:flex;
     flex-wrap:wrap;
+    font-size: 2rem;
+    margin-inline: 0.1rem;
 }
-.timeline .timeline-box .projects-2 span{
+#education .timeline .timeline-box .span{
+    display: flex;
+    flex-wrap: wrap;
+}
+#education .timeline .timeline-box span{
+    font-size:1.8rem;
     margin:auto;
-    font-size:2rem;
-    margin-top:-0.20rem;
-    margin-right:2rem;
+    margin-top:-0.5rem;
+    margin-bottom: -0.5rem;
+}
+#education .timeline .timeline-box p{
+    font-size:1.2rem;
+    margin:1rem 1rem;
+}
+#education .timeline .timeline-divider{
+    position:absolute;
+    left:49.9%;
+    top:10%;
+    border:3px dashed rgb(60, 60, 87);
+    width:0%;
+    height:80%;
+}
+#education .timeline .timeline-divider .timeline-traveller{
+    position: sticky;
+    transform: rotate(90deg);
+    font-size: 2rem;;
+    top:25%;
 }
 
-.timeline .timeline-box .projects-2 span img{
-    width:3rem;
-    height:3rem;
-    border-radius:2rem;
-    margin-top: -.25rem;
-    margin-right:-1rem;
+
+#project .timeline .timeline-divider{
+    position:absolute;
+    height:65%;
+    width:0px;
+    border:3px dashed rgb(4, 4, 4);
+    top:10%;
+    left:49.9%;
+}
+#project .timeline .timeline-divider .timeline-traveller{
+    position:sticky;
+    transform: rotate(90deg);
+    font-size:2rem;
+    top:25%;
+    color:rgb(2, 2, 69);
+}
+#contact{
+    width:auto;
+    height:auto;
+    background-color:rgb(100, 100, 98);
+    min-height:200px;
+}
+#contact .header{
+    display: flex;
+    flex-wrap:wrap;
+    width:15rem;
+    font-size: 3rem;
+    margin:auto;
+}
+#contact .header span{
+    margin-right:1rem;
+    margin-top: 1rem;
+    color:whitesmoke;
+}
+#contact .contact-us .footer-bar{
+    display: flex;
+    flex-wrap: wrap;
+}
+#contact .contact-us{
+    width: 60%;
+    margin:auto;
+    padding-top:2rem;
+}
+#contact .contact-us li{
+    list-style: none;
+    font-size:2.5rem;
+    margin:auto;
+}
+#contact .contact-us li i{
+    color:rgb(124, 167, 167);
 }
