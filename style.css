@@ -1,135 +1,84 @@
-/* Whole body */
 body{
+    width:100%;
+    min-width: 360px;
+    background-color: rgb(185, 186, 187);
     margin:0px;
-    padding: 0px;
-    background-color:white;
-    /* background-color:white; */
+    padding:0px;
 }
-
-section:target{
-    background-color: whitesmoke;
-}
-
-/* Body header */
-#body-header{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top:-1rem;
+#header{
+    width:100%;
     height:auto;
-    /* opacity: .95; */
     background-image: url(/images/img_lights.jpg);
-    background-size: cover;
     background-position: center;
-    background-attachment: fixed; /*to be at same place */
-    border:4px solid green;
-    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom:9rem;
+    margin-top:-1rem;
 }
-
-/* Navigation Bar*/
-.navbar{
-    list-style: none;
-}
-/* Navigation bar list  */
-.navbar li{
-    display:inline-block;
-    margin:-25px 12.5px 0px 12.5px;
-}
-
-/* Navigation bar lists a  */
-.navbar li a{
-    color:white;
-    font-size: 2rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-}
-
-/* navigation bar li a at hover  */
-.navbar .li a:hover{
-    color:rgb(195, 33, 33);
-    border-bottom: 1px solid black;
-}
-
-/* for test to be at center  */
 .text-center{
     text-align: center;
 }
-
-
-#body-header .name {
-    margin-top: -3rem;
+.navbar{
+    list-style: none;
+    padding:0%;
+}
+.navbar li{
+    display:inline-block;
+    margin-inline:1rem;
+    margin-top:-2rem;
+}
+.navbar li a{
+    color:white;
+    font-size:2rem;
+    text-decoration: none;
+}
+.name{
     font-size: 3rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -3rem;
     color:white;
 }
-.social-media{
-    margin-top:-4.5rem;
-}
-.social-media li a i{
-    padding:1rem;
-    font-size:2rem;
-    border-radius:50%;
-    margin-bottom: 10rem;
-}
-.social-media li a i:hover{
-    box-shadow: 0px 0px 6px 2px whitesmoke;
-}
-.social-media li a i:visited{
-    box-shadow: 0px 0px 6px 2px whitesmoke;
-}
 #about{
-    height:auto;
     width:100%;
-}
-.my-img{
-    height:14rem;
-    width:14rem;
-    margin:auto;
-    margin-top:-8rem;
-}
-.my-img img{
     position:relative;
-    width:100%;
-    height:100%;
-    border-radius: 180px;
+    margin-top:-7.5rem;
+}
+#about img{
+
+    width:15rem;
+    height:15rem;
+    border-radius: 8rem;
     border:2px solid green;
 }
-.about-me{
-    height:auto;
-    width:60%;
-    margin:auto;
+#about .about-me{
+    width:80%;
+    margin:3% 10%;
 }
-#about .about-me p{
-    color:rgb(69, 85, 99);
-    font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#skills{
-    margin-top:1rem;
-    height:auto;
-    width:100%;
-    display: inline-block;
-    background-color: rgb(210, 214, 214);
+#about .about-me h3{
+    font-size: 2rem;;
 }
 
-#skills .header{
-    display: flex;
-    border-radius: 4rem;
-    width:22rem;
-    margin:auto;
+#skills{
+    margin-top: 2rem;
+    width:100%;
+    height:auto;
+    background-color: rgb(226, 224, 224);
 }
-#skills .header:hover{
-    box-shadow: 0px 0px 8px 8px rgb(143, 128, 128);
+#skills .header{
+    display:flex;
+    width:20rem;
+    margin:auto;
+    border-radius: 3rem;
 }
 #skills .header span{
     font-size: 4rem;
-    color:rgba(39, 29, 81, 0.983);
-    margin:2rem 1rem;
+    margin:1rem 0.5rem
+}
+#skills .header:hover{
+    box-shadow: 0px 0px 8px 8px rgb(159, 159, 159);
 }
 
-
-#skill-display {
+#skills .skill-display {
     width:80%;
     margin:auto;
     height:auto;
@@ -140,7 +89,8 @@ section:target{
     padding-left:10%;
     padding-right:10%;
 }
-#skill-display .skill-progress{
+
+.skill-display .skill-progress{
     width:15rem;
     margin-top:2rem;
     height:2rem;
@@ -150,7 +100,7 @@ section:target{
     border:2px solid black;
     background-color: rgb(207, 202, 202);
 }
-#skill-display .skill-progress .seventy-five-percent{
+.skill-display .skill-progress .seventy-five-percent{
     margin-left:-0.5px;
     width:75%;
     height:inherit;
@@ -158,14 +108,14 @@ section:target{
     border-radius: 0.7rem;
     padding-top:1px;
 }
-#skill-display .skill-progress .seventy-five-percent .skill-name span{
+.skill-display .skill-progress .seventy-five-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
 }
 
 
-#skill-display .skill-progress .eighty-percent{
+.skill-display .skill-progress .eighty-percent{
     margin-left:-0.5px;
     width:85%;
     height:inherit;
@@ -173,13 +123,13 @@ section:target{
     border-radius: 0.7rem;
     padding-top:1px;
 }
-#skill-display .skill-progress .eighty-percent .skill-name span{
+.skill-display .skill-progress .eighty-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
 }
 
-#skill-display .skill-progress .fifty-percent{
+.skill-display .skill-progress .fifty-percent{
     margin-left:-0.5px;
     width:50%;
     height:inherit;
@@ -187,13 +137,13 @@ section:target{
     border-radius: 0.7rem;
     padding-top:1px;
 }
-#skill-display .skill-progress .fifty-percent .skill-name span{
+.skill-display .skill-progress .fifty-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
 }
 
-#skill-display .skill-progress .seventy-six-percent{
+.skill-display .skill-progress .seventy-six-percent{
     margin-left:-0.5px;
     width:76%;
     height:inherit;
@@ -201,12 +151,12 @@ section:target{
     border-radius: 0.7rem;
     padding-top:1px;
 }
-#skill-display .skill-progress .seventy-six-percent .skill-name span{
+.skill-display .skill-progress .seventy-six-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
 }
-#skill-display .skill-progress .ninety-percent{
+.skill-display .skill-progress .ninety-percent{
     margin-left:-0.25px;
     width:90%;
     height:inherit;
@@ -214,12 +164,12 @@ section:target{
     border-radius: 0.7rem;
     padding-top:1px;
 }
-#skill-display .skill-progress .ninety-percent .skill-name span{
+.skill-display .skill-progress .ninety-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
 }
-#skill-display .skill-progress .sixty-percent{
+.skill-display .skill-progress .sixty-percent{
     margin-left:-0.5px;
     width:60%;
     height:inherit;
@@ -227,12 +177,12 @@ section:target{
     border-radius: 0.7rem;
     padding-top:1px;
 }
-#skill-display .skill-progress .sixty-percent .skill-name span{
+.skill-display .skill-progress .sixty-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
 }
-#skill-display .skill-progress-dsa{
+.skill-display .skill-progress-dsa{
     width:30rem;
     margin-top:2rem;
     height:auto;
@@ -244,7 +194,7 @@ section:target{
     margin-bottom:5rem;
 }
 
-#skill-display .skill-progress-dsa .seventy-one-percent{
+.skill-display .skill-progress-dsa .seventy-one-percent{
     margin-left:-0.5px;
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +205,7 @@ section:target{
     padding-left:7px;
     padding-top:1px;
 }
-#skill-display .skill-progress-dsa .seventy-one-percent .skill-name span{
+.skill-display .skill-progress-dsa .seventy-one-percent .skill-name span{
     margin-left:1rem;
     font-size: 1.4rem;
     font-weight:bold;
@@ -264,14 +214,13 @@ section:target{
     width: 100%;
     height:auto;
     background-color: rgb(244, 244, 229);
-    margin-top:-1rem;
+    margin-top:-2rem;
 }
 #project .header{
     display: flex;
     border-radius: 4rem;
     width:22rem;
     margin:auto;
-    margin-top:0.5rem;
 }
 #project .header:hover{
     box-shadow: 0px 0px 8px 8px rgb(143, 128, 128);
@@ -355,18 +304,18 @@ section:target{
 #education .header{
     display: flex;
     border-radius:4rem;
-    width:20rem;
-    margin-top:-0.5rem;
     margin:auto;
+    width:28rem;
+    margin-top:-2rem;
 }
 #education .header:hover{
     box-shadow: 0px 0px 8px 8px rgb(143, 128, 128);
 }
 #education .header span{
     margin:auto;
-    font-size:3rem;
+    font-size:4rem;
     color:rgba(39, 29, 81, 0.983);
-    margin:0.5rem;
+    margin:2rem 1rem;
 }
  #education .timeline{
     position: relative;
@@ -443,38 +392,222 @@ section:target{
     top:25%;
     color:rgb(2, 2, 69);
 }
-#contact{
-    width:auto;
-    height:auto;
-    background-color:rgb(100, 100, 98);
-    min-height:200px;
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(114, 114, 114);
+    height: auto;
+    width: 100%;
+    padding-top: 2rem;
+    color: #fff;
 }
-#contact .header{
+.footer-content{
     display: flex;
-    flex-wrap:wrap;
-    width:15rem;
-    font-size: 3rem;
-    margin:auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
-#contact .header span{
-    margin-right:1rem;
-    margin-top: 1rem;
-    color:whitesmoke;
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
 }
-#contact .contact-us .footer-bar{
-    display: flex;
-    flex-wrap: wrap;
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
 }
-#contact .contact-us{
-    width: 60%;
-    margin:auto;
-    padding-top:2rem;
-}
-#contact .contact-us li{
+.socials{
     list-style: none;
-    font-size:2.5rem;
-    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
 }
-#contact .contact-us li i{
-    color:rgb(124, 167, 167);
+
+.socials li{
+    margin: 0 10px;
 }
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background: rgb(79, 79, 79);
+    width: auto;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+ }
+ .footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+ }
+ .footer-menu{
+    float: right;
+  }
+  
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+    color: #cfd2d6;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover{
+    color: #27bcda;
+  }
+@media screen and (max-width:815px){
+    .navbar li a{
+        font-size:1.5rem;
+    }
+    .name{
+        font-size: 2.25rem;
+    }
+    #about img{
+        width:12.5rem;
+        height:12.5rem;
+    }
+    #about .about-me h3{
+        font-size:1.5rem;
+    }
+    #project .timeline .timeline-box{
+        width:80%; 
+    }
+    #project .timeline .timeline-box:nth-child(2n){
+        left:0%;
+    }
+    #project .timeline .timeline-divider{
+        left:90%;
+    }
+    #education .timeline .timeline-box{
+        width:80%;
+        left:20%;
+    }
+    #education .timeline .timeline-box:nth-child(2n){
+        left:20%;
+    }
+    #education .timeline .timeline-divider{
+        left:10%;
+    }
+
+
+}
+@media screen and (max-width:665px){
+    #header{
+        margin-bottom:1rem;
+        height:120px;
+    }
+    .navbar li{
+        margin-inline: 0.7rem;
+    }
+    .navbar li a{
+        font-size:1rem;
+    }
+    .social-media .navbar{
+        margin-top: -0.9rem;
+    }
+    .name{
+        margin-top:1rem;
+        font-size: 1.4rem;
+    }
+    #about img{
+        width:10rem;
+        height:10rem;
+        margin-top: 1.35rem;
+    }
+}
+@media screen and (max-width:509px){
+    .navbar li{
+        margin-inline: 0.4rem;
+    }
+    .navbar li a{
+        font-size:1rem;
+    }
+    .social-media .navbar{
+        margin-top: -1rem;
+    }
+    .name{
+        font-size: 1.1rem;
+    }
+    #about img{
+        width:10rem;
+        height:10rem;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:400px){
+    body{
+        margin-top: -1rem;
+    }
+    .navbar li{
+        margin-inline: 0.1rem;
+    }
+    .navbar li a{
+        font-size:0.85rem;
+    }
+    .social-media li a{
+        font-size:1.1rem;
+    }
+    .social-media .navbar{
+        margin-top: -1rem;
+        margin-inline: 4rem;
+    }
+    .name{
+        font-size: 1.1rem;
+    }
+    #about img{
+        width:10rem;
+        height:10rem;
+        margin-top: 1rem;
+    }
+    #education .header span{
+        font-size: 3rem;
+    }
+}
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    }
